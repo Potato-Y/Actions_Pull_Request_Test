@@ -17,4 +17,15 @@ class MainTest {
 
     assertEquals(a+b,result);
   }
+
+  @Test
+  @DisplayName("테스트에 실패한다")
+  void sum2(){
+    int a= 1;
+    int b= 2;
+
+    int result = Main.sum(a,b);
+
+    assertEquals(a,result);
+  }
 }
